@@ -79,6 +79,46 @@
         <h3 class="mt-2">{{difference}}</h3>
       </article>
 
+      <article id="maxofnumber" class="col-md-4 ">
+        <h2>To find the max of numbers!</h2>
+        <p>Here's another component.</p>
+        <p>This one finds max of number!</p>
+
+        <fieldset class="mt-2">
+          <label for="first">Enter first number (1 to 100):</label>
+          <input v-model="first" id="first" type="number" min="1" max="100">
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-2">
+          <label for="second">Enter second number (1 to 100):</label>
+          <input v-model="second" id="second" type="number" min="1" max="100">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+
+        <p>{{maxofnumber}}</p>
+      </article>
+
+      <article id="minofnumber" class="col-md-4 ">
+        <h2>To find the min of numbers!</h2>
+        <p>Here's another component.</p>
+        <p>This one finds min of number!</p>
+
+        <fieldset class="mt-2">
+          <label for="first">Enter first number (1 to 100):</label>
+          <input v-model="first" id="first" type="number" min="1" max="100">
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-2">
+          <label for="second">Enter second number (1 to 100):</label>
+          <input v-model="second" id="second" type="number" min="1" max="100">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+
+        <p>{{minofnumber}}</p>
+      </article>
+
       <article id="coder" class="col-md-4 ">
         <h2>Build tools would help us combine HTML files</h2>
         <p>It's nice to start without having to add them, so everything goes in this one HTML file. </p>
@@ -140,6 +180,8 @@
   <script src="components/adder/adder.js"></script>
   <script src="components/subtracter/subtracter.js"></script>
   <script src="components/coder/coder.js"></script>
+  <script src="components/maxofnumber/max.js"></script>
+  <script src="components/minofnumber/min.js"></script>
 </body>
 
 </html>
